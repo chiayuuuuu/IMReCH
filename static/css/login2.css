@@ -1,0 +1,111 @@
+body {
+    background-image: url("../images/background.jpg");
+    /* background-image: url("./edit/images/m.jpg"); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:20% -40%;
+}
+#login_frame {
+    width: 450px;
+    height: 300px;
+    padding: 13px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 30px;
+    margin-top: -160px;
+    background-color: rgba(252, 252, 252,0.875);
+    border-radius: 10px;
+    text-align: center;
+}
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+#image_logo {
+    margin-top: 22px;
+}
+.label_input {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    width: 65px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #19c880;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 2px;
+}
+.text_field {
+    width: 200px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    margin-top: 2px;
+    margin-left: -5px;
+    background-color:white;
+}
+
+#login_control input {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2px;
+    width: 95px;
+    height: 38px;
+    line-height: 28px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #19c880;
+    border-radius: 6px;
+    border: 0;
+    position: relative;
+    float: right;
+    top: 20px;
+    margin-left: 20px;
+
+
+}
+
+
+
+#forget_pwd {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    top: -2px;
+    left:45px;
+}
+#forget_pwd:hover {
+    color: red;
+    text-decoration: underline;
+}
+#login_control {
+    padding: 0 28px;
+}
+/*#btn_login,#btn_register {*/
+/*    padding: 14px 28px;*/
+/*    margin-top:10px;*/
+/*    margin-bottom: 10px;*/
+/*    border: 0;*/
+/*    border-radius: 2px;*/
+/*    font-size: 10px;*/
+/*    font-weight: 600;*/
+/*    line-height: 1;*/
+/*    color: #fff;*/
+/*    text-transform: uppercase;*/
+/*    text-decoration: none;*/
+/*    letter-spacing: 0.1rem;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*    background: #19c880;*/
+
+/*}*/
+#btn_login:hover, #btn_register:hover {
+    border: 3px solid rgba(55, 154, 5, 0.622);
+}

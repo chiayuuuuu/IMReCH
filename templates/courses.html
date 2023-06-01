@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block title %}
+    <TITLE>home</TITLE>
+    <META content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <!-- 跳出視窗 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+{% endblock %}
+{% block content %}
+     <div class="row">
+            <div class=" offset-2 col-lg-8">
+                <div class="single-course-wrap">
+                    <div class="course-info flex flex-wrap align-items-center">
+                        <div class="course-author flex flex-wrap align-items-center mt-3">
+                            <div class="col-12 col-lg-12">
+                                <!-- <hr style="border-color:#fff; size:8em; width:auto;"> -->
+                                <h1 class="entry-title" style="color: #19c880;  margin-bottom: 10px;">0000專題製作</h1>
+                                <!-- <hr style="border-color:#fff; size:8em; width:auto;"> -->
+                            </div>
+
+                        </div><!-- .course-author //col-12 col-lg-12-->
+
+                        <div class="course-cats mt-3">
+                            <div class="buy-course mt-3">
+
+                                <!-- <img src="./images/course-author.jpg" alt=""> -->
+
+                                <div class="author-wrap">
+                                    <label class="m-0">Teacher</label>
+                                    <div class="author-name">魏世杰</div>
+                                </div><!-- .author-wrap -->
+                                <a class="btn" href="#" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal" id="uploadBtn">上傳</a>
+                                <!-- 跳出視窗內容 -->
+                                <div class="modal fade" id="loginModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Header -->
+                                            <div class="modal-header">
+                                                <h2>選擇檔案</h2>
+                                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
+                                            </div>
+
+                                            <!-- Body -->
+                                            <div class="modal-body">
+                                                <p id="chooseFile">
+                                                    <input type="file" id="file-uploader" accept=".mp4,.mov" multiple />
+                                                    <!-- <input id="files-upload" type="file" accept=".mp4,.mov" multiple> -->
+                                                </p>
+                                                <ul id="file-list"></ul>
+                                            </div>
+
+                                            <!-- Footer -->
+                                            <div class="modal-footer">
+                                                <a class="btn" href="#" id="confirmBtn" data-bs-dismiss="modal">確認</a>
+                                                <!-- videoName, dateTime, EDIT -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="btn" href="#">DELETE</a> -->
+                            </div><!-- .buy-course -->
+                            <!-- <div class="FileArea"></div> -->
+
+                        </div><!-- .course-cats -->
+
+                    </div><!-- .course-info -->
+
+                    <div class="single-course-accordion-cont mt-3">
+                        <header class="entry-header flex flex-wrap justify-content-between align-items-center">
+                            <h2>課程影片</h2>
+                            <p>(*提醒:系統會預先將您上傳的影片做去除無聲片段及產生字幕)</p>
+                            <!-- <div class="number-of-lectures">date</div>
+                            <div class="total-lectures-time">file size</div> -->
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-contents">
+                            <div class="accordion-wrap type-accordion">
+                                <div class="entry-content">
+                                    <ul id="J_List" class="p-0 m-0">
+                                        <li class="flex flex-column flex-lg-row align-items-lg-center"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- .entry-contents -->
+                    </div><!-- .single-course-accordion-cont  -->
+
+                </div><!-- .single-course-wrap -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+{% endblock %}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>setting</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="{% static "css/elegant-fonts.css" %}">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="{% static "css/themify-icons.css" %}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{% static "css/swiper.min.css" %}">
+     <!-- Styles -->
+     <link rel="stylesheet" href="{% static "css/alter_home.css" %}">
+     <link rel="stylesheet" href="{% static "css/table.css" %}">
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+    <link href="https://vjs.zencdn.net/7.19.2/video-js.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnout.com/videojs-markers/videojs.markers.css">
+    <link rel="stylesheet" href="https://cdnout.com/videojs-markers/videojs.markers.min.css">
+    <link rel="stylesheet" href="https://cdnout.com/videojs-markers/videojs.markers.css">
+    <link rel="stylesheet" href="https://cdnout.com/videojs-markers/css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body class="contact-page">
+    <div class="page-header">
+        <header class="site-header">
+                <div class="nav-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-9 col-lg-3">
+                                <div class="site-branding">
+                                    <a href="/home/" class="">
+                                        {% load static %}
+                                        <img src="{% static "images/IMReCH.png" %}" alt="" width="130" >
+                                    </a>
+                                </div><!-- .site-branding -->
+                            </div><!-- .col -->
+
+                            <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                                <nav class="site-navigation flex justify-content-end align-items-center">
+                                    <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                        <li><a href="/home/">Home</a></li>
+                                        <li><a href="/setting/">Setting</a></li>
+                                    </ul>
+
+                                    <div class="hamburger-menu d-lg-none">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- .hamburger-menu -->
+
+                                    <div class="header-bar-cart">
+                                        <!-- <a href="login.html" class="flex justify-content-center align-items-center"><span aria-hidden="true" class="icon_profile"></span></a> -->
+                                        <a href="/logout/" class="flex justify-content-center align-items-center">
+                                            {% load static %}
+                                            <img src="{% static "images/usericon.png" %}" alt="" width="16" height="17">
+                                        </a>
+                                    </div><!-- .header-bar-search -->
+                                    <!-- <div class="header-bar-cart"> -->
+                                        <!-- <a href="#" class="flex justify-content-center align-items-center"><span aria-hidden="true" class="icon_bag_alt"></span></a> -->
+                                    <!-- </div>.header-bar-search -->
+                                </nav><!-- .site-navigation -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <header class="entry-header">
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+
+    <div class="tabletwo">
+        <div style="height: 80px;"></div>
+        <div class="item">
+            <lable class="label">頭像</lable><br>
+            {% load static %}
+            <img src="{% static "images/user.png" %}" widch="150px" height="150px" id="avatar" onclick="$(this).next().click();"
+                onerror="this.src='./images/usericon.png'"><br>
+            <input type="file" id="btn-file" onchange="inputFile(this)" accept="image/*">
+        </div>
+        <div style="height: 12px;"></div>
+        <div class="item">
+            <lable class="label">姓名</lable>
+            <div class="input-block">
+                <input type="text" id="td_kongxi">
+            </div>
+        </div>
+        <div class="item">
+            <lable class="label">性別</lable>
+            <div class="input-block">
+                <input type="radio" name="sex" id="m"><label for="m">男</label>
+                <input type="radio" name="sex" id="fm"><label for="fm">女</label>
+            </div>
+        </div>
+        <div class="item">
+            <lable class="label">學號</lable>
+            <div class="input-block">
+                <input type="text" id="td_kongxi">
+            </div>
+        </div>
+        <div class="item">
+            <lable class="label">密碼</lable>
+            <div class="input-block">
+                <input type="password" id="text_one" placeholder="請輸入密碼">
+            </div>
+        </div>
+        <div class="item">
+            <lable class="label">信箱</lable>
+            <div class="input-block">
+                <input type="text"  id="text_one">
+            </div>
+        </div>
+        <div class="item">
+            <lable class="label"></lable>
+            <div class="input-block">
+                <!-- <input type="button" id="btn_register" value="完成" onclick="window.location.href='home.html'"> -->
+                {% csrf_token %}
+                <input type="submit"  id="btn_register" value="完成" href="/home/">
+                {% csrf_token %}
+                <input type="submit"  id="btn_register" value="取消" href="/home/">
+            </div>
+        </div>
+    </div>
+         
+
+     <div style="height: 220px;"></div>
+
+     <footer>
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                    <div class="col-12 col-lg-12">                      
+                        <div class="cccc" style="text-align:center ;">
+                            Hi! Welcome to our website. We are students from Information Management department, this is our SD "I am review class helper".                        </div>
+                        <div class="cccc" style="text-align:center;"> 
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by Colorlib 
+                        </div>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+
+    
+   {% load static %}
+    <script type='text/javascript' src="{% static 'js/jquery.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/swiper.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/jquery.collapsible.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/custom.js' %}"></script>
+
+    <script type="text/javascript" src="{% static "js/edit.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/setting.js" %}"></script>
+
+
+</body>
+</html>

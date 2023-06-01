@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="{% static "css/elegant-fonts.css" %}">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="{% static "css/themify-icons.css" %}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{% static "css/swiper.min.css" %}">
+     <!-- Styles -->
+     <link rel="stylesheet" href="{% static "css/alter_home.css" %}">
+     <link rel="stylesheet" href="{% static "css/table.css" %}">
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+    <link href="https://vjs.zencdn.net/7.19.2/video-js.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnout.com/videojs-markers/videojs.markers.css">
+    <link rel="stylesheet" href="https://cdnout.com/videojs-markers/videojs.markers.min.css">
+    <link rel="stylesheet" href="https://cdnout.com/videojs-markers/videojs.markers.css">
+    <link rel="stylesheet" href="https://cdnout.com/videojs-markers/css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    {% block title %}
+    {% endblock %}
+</head>
+<body class="contact-page">
+    <div class="page-header">
+        <header class="site-header">
+            <header class="site-header">                
+                <div class="nav-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-9 col-lg-3">
+                                <div class="site-branding">
+                                    <a href="/home/" class="">
+                                        {% load static %}
+                                        <img src="{% static "images/IMReCH.png" %}" alt="" width="130" >
+                                    </a>
+                                </div><!-- .site-branding -->
+                            </div><!-- .col -->
+
+                            <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                                <nav class="site-navigation flex justify-content-end align-items-center">
+                                    <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                        <li><a href="/home/">Home</a></li>
+                                        <li><a href="/setting/">Setting</a></li>
+                                    </ul>
+
+                                    <div class="header-bar-cart">
+                                        <a href="/logout/" class="flex justify-content-center align-items-center">
+                                            {% load static %}
+                                            <img src="{% static "images/usericon.png" %}" alt="" width="16" height="17">
+                                        </a>
+                                    </div><!-- .header-bar-search -->
+                                    <!-- <div class="header-bar-cart"> -->
+                                        <!-- <a href="#" class="flex justify-content-center align-items-center"><span aria-hidden="true" class="icon_bag_alt"></span></a> -->
+                                    <!-- </div>.header-bar-search -->
+                                </nav><!-- .site-navigation -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .nav-bar -->
+            </header><!-- .site-header -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <header class="entry-header">
+                            <h1></h1>
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+
+
+    <div class="container">  
+        {% block content %}
+        {% endblock %}
+    </div><!-- .container -->
+
+    <hr style="border-color:#fff; size:8em; width:auto;">
+    <footer>
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                    <div class="col-12 col-lg-12">                      
+                        <div class="cccc" style="text-align:center ;">
+                            Hi! Welcome to our website. We are students from Information Management department, this is our SD "I am review class helper".                        </div>
+                        <div class="cccc" style="text-align:center;"> 
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by Colorlib 
+                        </div>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+
+    
+   
+
+
+    
+    {% load static %}
+    <script type='text/javascript' src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/swiper.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/jquery.collapsible.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/custom.js' %}"></script>
+
+    <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnout.com/videojs-markers/videojs-markers.js"></script>
+    <script src="https://cdnout.com/videojs-markers"></script>
+    {% load static %}
+    <script src="{% static "js/script.js" %}"></script>
+    <script src="{% static "js/home.js" %}"></script>
+    <!-- uploadfile -->
+    <script src="{% static "js/upload.js" %}"></script>
+    <!-- 網頁視窗大小改變用 -->
+    <script type='text/javascript' src="{% static 'js/swiper.min.js' %}"></script>
+</body>
+</html>
